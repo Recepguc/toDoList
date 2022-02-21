@@ -4,18 +4,23 @@ let button = document.getElementById("button");
 let ul = document.getElementById("ul");
 let counter = document.getElementById("counter");
 let p = document.getElementById("p");
+let span1 = document.getElementById("span1");
+let span2 = document.getElementById("span2");
 
-let count = 0;
-let count1 = 0;
-let count2 = 0;
+
+// let count = 0 ;
+// let count1 = 0 ;
+
+ 
+
 
 
 
 
 button.addEventListener("click", ()=>{
-    count +=1
-
-
+    
+    // count += 1
+    
     if(input.value == ""){
         alert("Please fill out the form!!!");
     }
@@ -36,16 +41,19 @@ button.addEventListener("click", ()=>{
         let empty = document.createElement("br");
         ul.appendChild(empty)
     
+    
     button2.addEventListener("click", ()=>{
-        count1 += 1
-
+    
+        // count1 += 1
         list.style.textDecoration = "line-through"
         list.style.color = "red"
         
         
     });
     button1.addEventListener("click", ()=>{
-        count2 -= 1        
+        // count -= 1
+        // count1 -= 1
+        
         ul.removeChild(list);
         ul.removeChild(button1);
         ul.removeChild(button2);
@@ -65,9 +73,9 @@ button.addEventListener("click", ()=>{
 
     
 
-    p.innerHTML = `${count1} OUT  OF ${count} TASKS COMPLETED`
-    console.log(count);
-    console.log(count1);
+    // p.innerHTML = `${count1} OUT  OF ${count} TASKS COMPLETED`
+    // console.log(count);
+    // console.log(count1);
 
     
     

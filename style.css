@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(./image/MGA063-8eee.jpg);
+    background-image: url(./image/background.jpg);
     background-repeat: no-repeat;
     background-size: 60%;
     height:55rem;
     background-position: center;
     background-color: burlywood;
+    /* background-attachment: fixed; */
 }
 .content{
     text-align: center;
@@ -22,7 +23,7 @@ body{
 }
 .button{
     background-color: chartreuse;
-    width: 2rem;
+    width: 3rem;
     height: 2rem;
 
 }
@@ -35,10 +36,15 @@ body{
     text-align: center;
     padding-top: 2rem;
     color: white;
+    
+    
 }
 li{
     display: inline-block;
     padding: 1rem 0.5rem;
+    max-width: 50%;
+    overflow-wrap: break-word;
+    
 }
 .counter{
     text-align: center;
